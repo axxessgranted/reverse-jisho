@@ -17,7 +17,7 @@ function App() {
       <h1 className="mb-4 text-2xl font-bold">Reverse Jisho</h1>
 
       <SearchInput value={query} onChange={setQuery} />
-      <EntryList entries={results} />
+      <EntryList entries={results} query={query} />
     </div>
   );
 }
